@@ -45,6 +45,8 @@ module.exports = function*(argv) {
 }
 
 function createRepoUrl(repo) {
+if (repo.repoName == 'cordova-ubuntu')
+return 'https://github.com/Zaspire/cordova-ubuntu.git'
     return 'https://git-wip-us.apache.org/repos/asf/' + repo.repoName + '.git';
 }
 
